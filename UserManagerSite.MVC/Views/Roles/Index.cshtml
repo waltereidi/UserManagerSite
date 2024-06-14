@@ -1,3 +1,4 @@
+@model IEnumerable<UserManagerSite.Domain.Models.Role>
 <style>
     
 
@@ -64,6 +65,10 @@
                         </div>
                     </th>
                 </tr>
+                @foreach(var item in Model)
+                {
+                    <tr><td>@item.id</td><td>@item.role</td><td>sdsd</td></tr>
+                }
             </tbody>
         </table>
     </fieldset>
